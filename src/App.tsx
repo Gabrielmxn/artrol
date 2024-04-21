@@ -25,12 +25,12 @@ ALL`INSONNIA ED AGLI ATTACCHI DI PANICO!</p>
         </div>
         <img className="w-52" src={product} alt="" />
       <div>
-      <form action="">
+      <form action="" onSubmit={handleSubmitForm}>
         <label htmlFor="">Il tuo nome:</label>
         <input type="text" />
         <label htmlFor="">Il tuo contatto telefonico:</label>
         <input type="text" />
-        <button onClick={handleSubmitForm}>Ordinare</button>
+        <button type='submit'>Ordinare</button>
         </form>
         <span>*Questo sconto su una confezione è valido quando si ordina il trattamento completo</span>
       </div>
