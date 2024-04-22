@@ -2,7 +2,7 @@ import { api } from "../lib/axios"
 
     // // Required params
     const token = 'NDVLM2E1ZDITMWQZYI00OGQ1LTG3MTATZJK2MJY1NDY5NWNL';
-    const stream_code = 'gjnv3';
+    const stream_code = 'rpwja';
 
     // Fields to send
     const post_fields = {
@@ -12,7 +12,7 @@ import { api } from "../lib/axios"
             name: 'Gabriel'
         },
         
-        sub1: 'fe',
+        sub1: "{clickid}", 
         sub2: 'sf',
         'sub3': '',
         'sub4': '',
@@ -21,6 +21,7 @@ import { api } from "../lib/axios"
 
 
 export const drCashApi = async () => {
+
    const response = await api.post('/', {
     post_fields,
     }, { 
