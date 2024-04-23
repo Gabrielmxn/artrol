@@ -2,7 +2,7 @@ import { api } from "../lib/axios"
 
     // // Required params
     const token = 'NDVLM2E1ZDITMWQZYI00OGQ1LTG3MTATZJK2MJY1NDY5NWNL';
-    const stream_code = 'rpwja';
+    const stream_code = 'gjnv3';
 
     // Fields to send
     const post_fields = {
