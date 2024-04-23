@@ -1,4 +1,4 @@
-import { Check, CheckCircle, X } from '@phosphor-icons/react'
+import { CheckCircle, X } from '@phosphor-icons/react'
 import imgLogo from '../assets/barbeador.png'
 import barCort from '../assets/barcort.jpg'
 import cort from '../assets/cort.jpg'
