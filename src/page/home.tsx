@@ -4,11 +4,13 @@ import barCort from '../assets/barcort.jpg'
 import cort from '../assets/cort.jpg'
 import photo1 from '../assets/photo1.jpg'
 import photo3 from '../assets/foto3.jpg'
+import original from '../assets/original.jpg'
+import cod from '../assets/cod.jpg'
 
 import espec from '../assets/espec.jpg'
 export function Home() {
   return (
-    <main className='bg-gray-100'>
+    <main className='bg-gray-100 h-screen'>
       <a href="#KUPTERAZ" className='z-50 fixed bg-green-500 py-2 px-4 rounded-sm text-white font-semibold top-4 right-4' >
         KUP TERAZ
       </a>
@@ -96,6 +98,14 @@ export function Home() {
             <p> Płatność przy Odbiorze</p>
           </div>
         </div>
+        <div className='flex flex-col gap-2 justify-center items-center my-4'>
+          <p className='text-center text-yellow-400'>DZISIEJSZA PROMOCJA SPECJALNA DO 60% ZNIŻKI</p>
+          <span>(Promocja Ograniczona)</span>
+          <span>Cena normalna</span>
+          <span className='text-red-500 line-through'>318 PLN</span>
+          <span>Dzisiejsza Promocja</span>
+          <span>Zakup Promocyjny 1 za <span className='text-green-500'>159 PLN</span></span>
+        </div>
         <form id="KUPTERAZ" className="orderForm">
           <input type="hidden" name="sub1" value="{clickid}" />
           <div className='flex flex-col gap-1 mb-2'>
@@ -109,6 +119,14 @@ export function Home() {
           <button className="w-full p-2 rounded mt-4 bg-green-400 font-normal text-black hover:text-white hover:bg-green-600 transform duration-200 ease-in-out" type='submit'>KUP TERAZ</button>
         </form>
       </section>
+      <img className='mx-auto my-4 rounded' src={cod} alt="" />
+      <img className='mx-auto max-w-80 rounded' src={original} alt="" />
+      <footer className="w-full p-4 bg-gray-950 mb-0">
+        <div className='flex flex-col gap-0 text-white justify-center items-center'>
+          <span className='text-sm'>dibuat dengan</span>
+          <span className='text-3xl font-bold '>berdu</span>
+        </div>
+      </footer>
     </main>
   )
 }
