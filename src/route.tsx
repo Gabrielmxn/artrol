@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home } from "./page/home";
+import { Thanks } from "./page/thanks";
 
 export const router = createBrowserRouter([
   {
@@ -8,6 +9,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/thanks",
-    element: <div>Thanks</div>
+    element: <Thanks />
   }
 ])
