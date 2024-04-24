@@ -110,11 +110,11 @@ export function Home() {
           <input type="hidden" name="sub1" value="{clickid}" />
           <div className='flex flex-col gap-1 mb-2'>
             <label htmlFor="">Il tuo nome:</label>
-            <input className="text-gray-950 p-2 border-2 border-gray-900/20 rounded outline-none focus:border-2 focus:border-blue-500" type="text" placeholder='Twoje imię' />
+            <input required className="text-gray-950 p-2 border-2 border-gray-900/20 rounded outline-none focus:border-2 focus:border-blue-500" type="text" placeholder='Twoje imię' />
           </div>
           <div className='flex flex-col gap-1'>
             <label htmlFor="">Il tuo contatto telefonico:</label>
-            <input className="text-gray-950 p-2 border-2 border-gray-900/20 rounded outline-none focus:border-2 focus:border-blue-500" type="text" placeholder='NIE. swojego WhatsAppa' />
+            <input required className="text-gray-950 p-2 border-2 border-gray-900/20 rounded outline-none focus:border-2 focus:border-blue-500" type="text" placeholder='NIE. swojego WhatsAppa' />
           </div>
           <button className="w-full p-2 rounded mt-4 bg-green-400 font-normal text-black hover:text-white hover:bg-green-600 transform duration-200 ease-in-out" type='submit'>KUP TERAZ</button>
         </form>
